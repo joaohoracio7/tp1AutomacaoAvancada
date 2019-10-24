@@ -1,0 +1,10 @@
+C:\Users\João\Desktop\projetos\TP1\bin\Debug\TP1.exe.config
+C:\Users\João\Desktop\projetos\TP1\bin\Debug\TP1.exe
+C:\Users\João\Desktop\projetos\TP1\bin\Debug\TP1.pdb
+C:\Users\João\Desktop\projetos\TP1\obj\Debug\TP1.csprojAssemblyReference.cache
+C:\Users\João\Desktop\projetos\TP1\obj\Debug\TP1.Properties.Resources.resources
+C:\Users\João\Desktop\projetos\TP1\obj\Debug\TP1.csproj.GenerateResource.cache
+C:\Users\João\Desktop\projetos\TP1\obj\Debug\TP1.csproj.CoreCompileInputs.cache
+C:\Users\João\Desktop\projetos\TP1\obj\Debug\TP1.exe
+C:\Users\João\Desktop\projetos\TP1\obj\Debug\TP1.pdb
+C:\Users\João\Desktop\projetos\TP1\obj\Debug\TP1.View.resources
