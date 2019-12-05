@@ -7,14 +7,18 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-    class CentralRecursos
+    // Classe que tratará exclusão mútua
+    public class CentralRecursos
     {
-        Mutex tesoura1;
-        Mutex tesoura2;
-        Mutex maquinaCostura1;
-        Mutex maquinaCostura2;
-        Mutex estampadora;
-        Mutex embaladora;
+        // Cria uma instância de semaforo binário para cada recurso
+        // Que são estáticos para que tenha apenas um semaforo para todas as instâncias
+
+        public static Semaphore tesoura1 = new Semaphore(1, 1);
+        public static Semaphore tesoura2 = new Semaphore(1, 1);
+        public static Semaphore maquinaCostura1 = new Semaphore(1, 1);
+        public static Semaphore maquinaCostura2 = new Semaphore(1, 1);
+        public static Semaphore estampadora = new Semaphore(1, 1);
+        public static Semaphore empacotadora = new Semaphore(1, 1);
 
     }
 }

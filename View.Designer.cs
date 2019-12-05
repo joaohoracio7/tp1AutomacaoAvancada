@@ -31,19 +31,91 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.linha1 = new System.Windows.Forms.GroupBox();
+            this.labelEstampa1 = new System.Windows.Forms.Label();
+            this.labelCostura1 = new System.Windows.Forms.Label();
+            this.labelCorte1 = new System.Windows.Forms.Label();
+            this.embalando1 = new System.Windows.Forms.PictureBox();
+            this.estampa1 = new System.Windows.Forms.PictureBox();
+            this.costura1 = new System.Windows.Forms.PictureBox();
+            this.corte1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linha2 = new System.Windows.Forms.GroupBox();
+            this.embalando2 = new System.Windows.Forms.PictureBox();
+            this.labelEstampa2 = new System.Windows.Forms.Label();
+            this.estampa2 = new System.Windows.Forms.PictureBox();
+            this.labelCostura2 = new System.Windows.Forms.Label();
+            this.costura2 = new System.Windows.Forms.PictureBox();
+            this.labelCorte2 = new System.Windows.Forms.Label();
+            this.corte2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.centralDeRecursos = new System.Windows.Forms.GroupBox();
+            this.empacotadora = new System.Windows.Forms.PictureBox();
+            this.estampadora = new System.Windows.Forms.PictureBox();
+            this.maquina2 = new System.Windows.Forms.PictureBox();
+            this.maquina1 = new System.Windows.Forms.PictureBox();
+            this.tesoura2 = new System.Windows.Forms.PictureBox();
+            this.tesoura1 = new System.Windows.Forms.PictureBox();
+            this.filaA3 = new System.Windows.Forms.PictureBox();
+            this.filaA2 = new System.Windows.Forms.PictureBox();
+            this.filaA1 = new System.Windows.Forms.PictureBox();
+            this.filaB1 = new System.Windows.Forms.PictureBox();
+            this.filaB2 = new System.Windows.Forms.PictureBox();
+            this.filaB3 = new System.Windows.Forms.PictureBox();
+            this.tesouraLinha1 = new System.Windows.Forms.PictureBox();
+            this.tesouraLinha2 = new System.Windows.Forms.PictureBox();
+            this.maquinaLinha1 = new System.Windows.Forms.PictureBox();
+            this.maquinaLinha2 = new System.Windows.Forms.PictureBox();
+            this.estampadoraLinha = new System.Windows.Forms.PictureBox();
+            this.empacotadoraLinha = new System.Windows.Forms.PictureBox();
+            this.labelEstampadoraLinha2 = new System.Windows.Forms.Label();
+            this.labelEmpacotadoraLinha2 = new System.Windows.Forms.Label();
+            this.labelEstampadoraLinha1 = new System.Windows.Forms.Label();
+            this.labelEmpacotadoraLinha1 = new System.Windows.Forms.Label();
+            this.linha1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.embalando1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estampa1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.costura1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.corte1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.linha2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.embalando2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estampa2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.costura2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.corte2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.centralDeRecursos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.empacotadora)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estampadora)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maquina2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maquina1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tesoura2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tesoura1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaA3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaA2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaA1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaB1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaB2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaB3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tesouraLinha1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tesouraLinha2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maquinaLinha1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maquinaLinha2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estampadoraLinha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empacotadoraLinha)).BeginInit();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(109, 32);
+            this.richTextBox1.Location = new System.Drawing.Point(668, 256);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(347, 342);
+            this.richTextBox1.Size = new System.Drawing.Size(133, 58);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(507, 130);
+            this.button1.Location = new System.Drawing.Point(618, 320);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -53,7 +125,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(507, 195);
+            this.button2.Location = new System.Drawing.Point(720, 320);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -61,17 +133,506 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
+            // linha1
+            // 
+            this.linha1.Controls.Add(this.labelEstampa1);
+            this.linha1.Controls.Add(this.labelCostura1);
+            this.linha1.Controls.Add(this.labelCorte1);
+            this.linha1.Controls.Add(this.embalando1);
+            this.linha1.Controls.Add(this.estampa1);
+            this.linha1.Controls.Add(this.costura1);
+            this.linha1.Controls.Add(this.corte1);
+            this.linha1.Controls.Add(this.pictureBox1);
+            this.linha1.Location = new System.Drawing.Point(151, 26);
+            this.linha1.Name = "linha1";
+            this.linha1.Size = new System.Drawing.Size(430, 165);
+            this.linha1.TabIndex = 3;
+            this.linha1.TabStop = false;
+            this.linha1.Text = "Linha de Produção 1";
+            // 
+            // labelEstampa1
+            // 
+            this.labelEstampa1.AutoSize = true;
+            this.labelEstampa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEstampa1.Location = new System.Drawing.Point(223, 72);
+            this.labelEstampa1.Name = "labelEstampa1";
+            this.labelEstampa1.Size = new System.Drawing.Size(86, 17);
+            this.labelEstampa1.TabIndex = 23;
+            this.labelEstampa1.Text = "Aguardando";
+            this.labelEstampa1.Visible = false;
+            // 
+            // labelCostura1
+            // 
+            this.labelCostura1.AutoSize = true;
+            this.labelCostura1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCostura1.Location = new System.Drawing.Point(120, 72);
+            this.labelCostura1.Name = "labelCostura1";
+            this.labelCostura1.Size = new System.Drawing.Size(86, 17);
+            this.labelCostura1.TabIndex = 22;
+            this.labelCostura1.Text = "Aguardando";
+            this.labelCostura1.Visible = false;
+            // 
+            // labelCorte1
+            // 
+            this.labelCorte1.AutoSize = true;
+            this.labelCorte1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorte1.Location = new System.Drawing.Point(14, 72);
+            this.labelCorte1.Name = "labelCorte1";
+            this.labelCorte1.Size = new System.Drawing.Size(86, 17);
+            this.labelCorte1.TabIndex = 21;
+            this.labelCorte1.Text = "Aguardando";
+            this.labelCorte1.Visible = false;
+            // 
+            // embalando1
+            // 
+            this.embalando1.Image = global::TP1.Properties.Resources.embalando;
+            this.embalando1.Location = new System.Drawing.Point(324, 19);
+            this.embalando1.Name = "embalando1";
+            this.embalando1.Size = new System.Drawing.Size(100, 50);
+            this.embalando1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.embalando1.TabIndex = 4;
+            this.embalando1.TabStop = false;
+            this.embalando1.Visible = false;
+            // 
+            // estampa1
+            // 
+            this.estampa1.Location = new System.Drawing.Point(218, 19);
+            this.estampa1.Name = "estampa1";
+            this.estampa1.Size = new System.Drawing.Size(100, 50);
+            this.estampa1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.estampa1.TabIndex = 3;
+            this.estampa1.TabStop = false;
+            // 
+            // costura1
+            // 
+            this.costura1.Location = new System.Drawing.Point(112, 19);
+            this.costura1.Name = "costura1";
+            this.costura1.Size = new System.Drawing.Size(100, 50);
+            this.costura1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.costura1.TabIndex = 2;
+            this.costura1.TabStop = false;
+            // 
+            // corte1
+            // 
+            this.corte1.Location = new System.Drawing.Point(6, 19);
+            this.corte1.Name = "corte1";
+            this.corte1.Size = new System.Drawing.Size(100, 50);
+            this.corte1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.corte1.TabIndex = 1;
+            this.corte1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TP1.Properties.Resources.esteira;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 75);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(418, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // linha2
+            // 
+            this.linha2.Controls.Add(this.embalando2);
+            this.linha2.Controls.Add(this.labelEstampa2);
+            this.linha2.Controls.Add(this.estampa2);
+            this.linha2.Controls.Add(this.labelCostura2);
+            this.linha2.Controls.Add(this.costura2);
+            this.linha2.Controls.Add(this.labelCorte2);
+            this.linha2.Controls.Add(this.corte2);
+            this.linha2.Controls.Add(this.pictureBox6);
+            this.linha2.Location = new System.Drawing.Point(151, 302);
+            this.linha2.Name = "linha2";
+            this.linha2.Size = new System.Drawing.Size(430, 165);
+            this.linha2.TabIndex = 4;
+            this.linha2.TabStop = false;
+            this.linha2.Text = "Linha de Produção 2";
+            // 
+            // embalando2
+            // 
+            this.embalando2.Image = global::TP1.Properties.Resources.embalando;
+            this.embalando2.Location = new System.Drawing.Point(324, 109);
+            this.embalando2.Name = "embalando2";
+            this.embalando2.Size = new System.Drawing.Size(100, 50);
+            this.embalando2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.embalando2.TabIndex = 4;
+            this.embalando2.TabStop = false;
+            this.embalando2.Visible = false;
+            // 
+            // labelEstampa2
+            // 
+            this.labelEstampa2.AutoSize = true;
+            this.labelEstampa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEstampa2.Location = new System.Drawing.Point(223, 89);
+            this.labelEstampa2.Name = "labelEstampa2";
+            this.labelEstampa2.Size = new System.Drawing.Size(86, 17);
+            this.labelEstampa2.TabIndex = 27;
+            this.labelEstampa2.Text = "Aguardando";
+            this.labelEstampa2.Visible = false;
+            // 
+            // estampa2
+            // 
+            this.estampa2.Location = new System.Drawing.Point(218, 109);
+            this.estampa2.Name = "estampa2";
+            this.estampa2.Size = new System.Drawing.Size(100, 50);
+            this.estampa2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.estampa2.TabIndex = 3;
+            this.estampa2.TabStop = false;
+            // 
+            // labelCostura2
+            // 
+            this.labelCostura2.AutoSize = true;
+            this.labelCostura2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCostura2.Location = new System.Drawing.Point(120, 89);
+            this.labelCostura2.Name = "labelCostura2";
+            this.labelCostura2.Size = new System.Drawing.Size(86, 17);
+            this.labelCostura2.TabIndex = 26;
+            this.labelCostura2.Text = "Aguardando";
+            this.labelCostura2.Visible = false;
+            // 
+            // costura2
+            // 
+            this.costura2.Location = new System.Drawing.Point(112, 109);
+            this.costura2.Name = "costura2";
+            this.costura2.Size = new System.Drawing.Size(100, 50);
+            this.costura2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.costura2.TabIndex = 2;
+            this.costura2.TabStop = false;
+            // 
+            // labelCorte2
+            // 
+            this.labelCorte2.AutoSize = true;
+            this.labelCorte2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorte2.Location = new System.Drawing.Point(14, 89);
+            this.labelCorte2.Name = "labelCorte2";
+            this.labelCorte2.Size = new System.Drawing.Size(86, 17);
+            this.labelCorte2.TabIndex = 25;
+            this.labelCorte2.Text = "Aguardando";
+            this.labelCorte2.Visible = false;
+            // 
+            // corte2
+            // 
+            this.corte2.Location = new System.Drawing.Point(6, 109);
+            this.corte2.Name = "corte2";
+            this.corte2.Size = new System.Drawing.Size(100, 50);
+            this.corte2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.corte2.TabIndex = 1;
+            this.corte2.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::TP1.Properties.Resources.esteira;
+            this.pictureBox6.Location = new System.Drawing.Point(6, 18);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(418, 83);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // centralDeRecursos
+            // 
+            this.centralDeRecursos.Controls.Add(this.empacotadora);
+            this.centralDeRecursos.Controls.Add(this.estampadora);
+            this.centralDeRecursos.Controls.Add(this.maquina2);
+            this.centralDeRecursos.Controls.Add(this.maquina1);
+            this.centralDeRecursos.Controls.Add(this.tesoura2);
+            this.centralDeRecursos.Controls.Add(this.tesoura1);
+            this.centralDeRecursos.Location = new System.Drawing.Point(587, 26);
+            this.centralDeRecursos.Name = "centralDeRecursos";
+            this.centralDeRecursos.Size = new System.Drawing.Size(214, 187);
+            this.centralDeRecursos.TabIndex = 5;
+            this.centralDeRecursos.TabStop = false;
+            this.centralDeRecursos.Text = "Central de Recursos";
+            // 
+            // empacotadora
+            // 
+            this.empacotadora.Image = global::TP1.Properties.Resources.embaladora;
+            this.empacotadora.Location = new System.Drawing.Point(108, 131);
+            this.empacotadora.Name = "empacotadora";
+            this.empacotadora.Size = new System.Drawing.Size(100, 50);
+            this.empacotadora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.empacotadora.TabIndex = 5;
+            this.empacotadora.TabStop = false;
+            // 
+            // estampadora
+            // 
+            this.estampadora.Image = global::TP1.Properties.Resources.estampadora;
+            this.estampadora.Location = new System.Drawing.Point(6, 131);
+            this.estampadora.Name = "estampadora";
+            this.estampadora.Size = new System.Drawing.Size(100, 50);
+            this.estampadora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.estampadora.TabIndex = 4;
+            this.estampadora.TabStop = false;
+            // 
+            // maquina2
+            // 
+            this.maquina2.Image = global::TP1.Properties.Resources.maquina;
+            this.maquina2.Location = new System.Drawing.Point(108, 75);
+            this.maquina2.Name = "maquina2";
+            this.maquina2.Size = new System.Drawing.Size(100, 50);
+            this.maquina2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.maquina2.TabIndex = 3;
+            this.maquina2.TabStop = false;
+            // 
+            // maquina1
+            // 
+            this.maquina1.Image = global::TP1.Properties.Resources.maquina;
+            this.maquina1.Location = new System.Drawing.Point(6, 75);
+            this.maquina1.Name = "maquina1";
+            this.maquina1.Size = new System.Drawing.Size(100, 50);
+            this.maquina1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.maquina1.TabIndex = 2;
+            this.maquina1.TabStop = false;
+            // 
+            // tesoura2
+            // 
+            this.tesoura2.Image = global::TP1.Properties.Resources.tesoura;
+            this.tesoura2.Location = new System.Drawing.Point(108, 19);
+            this.tesoura2.Name = "tesoura2";
+            this.tesoura2.Size = new System.Drawing.Size(100, 50);
+            this.tesoura2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.tesoura2.TabIndex = 1;
+            this.tesoura2.TabStop = false;
+            // 
+            // tesoura1
+            // 
+            this.tesoura1.Image = global::TP1.Properties.Resources.tesoura;
+            this.tesoura1.Location = new System.Drawing.Point(6, 19);
+            this.tesoura1.Name = "tesoura1";
+            this.tesoura1.Size = new System.Drawing.Size(100, 50);
+            this.tesoura1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.tesoura1.TabIndex = 0;
+            this.tesoura1.TabStop = false;
+            // 
+            // filaA3
+            // 
+            this.filaA3.Location = new System.Drawing.Point(20, 44);
+            this.filaA3.Name = "filaA3";
+            this.filaA3.Size = new System.Drawing.Size(53, 50);
+            this.filaA3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.filaA3.TabIndex = 6;
+            this.filaA3.TabStop = false;
+            // 
+            // filaA2
+            // 
+            this.filaA2.Location = new System.Drawing.Point(58, 93);
+            this.filaA2.Name = "filaA2";
+            this.filaA2.Size = new System.Drawing.Size(53, 50);
+            this.filaA2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.filaA2.TabIndex = 7;
+            this.filaA2.TabStop = false;
+            // 
+            // filaA1
+            // 
+            this.filaA1.Location = new System.Drawing.Point(98, 141);
+            this.filaA1.Name = "filaA1";
+            this.filaA1.Size = new System.Drawing.Size(53, 50);
+            this.filaA1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.filaA1.TabIndex = 8;
+            this.filaA1.TabStop = false;
+            // 
+            // filaB1
+            // 
+            this.filaB1.Location = new System.Drawing.Point(98, 417);
+            this.filaB1.Name = "filaB1";
+            this.filaB1.Size = new System.Drawing.Size(53, 50);
+            this.filaB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.filaB1.TabIndex = 11;
+            this.filaB1.TabStop = false;
+            // 
+            // filaB2
+            // 
+            this.filaB2.Location = new System.Drawing.Point(58, 369);
+            this.filaB2.Name = "filaB2";
+            this.filaB2.Size = new System.Drawing.Size(53, 50);
+            this.filaB2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.filaB2.TabIndex = 10;
+            this.filaB2.TabStop = false;
+            // 
+            // filaB3
+            // 
+            this.filaB3.Location = new System.Drawing.Point(20, 320);
+            this.filaB3.Name = "filaB3";
+            this.filaB3.Size = new System.Drawing.Size(53, 50);
+            this.filaB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.filaB3.TabIndex = 9;
+            this.filaB3.TabStop = false;
+            // 
+            // tesouraLinha1
+            // 
+            this.tesouraLinha1.Image = global::TP1.Properties.Resources.tesoura;
+            this.tesouraLinha1.Location = new System.Drawing.Point(157, 190);
+            this.tesouraLinha1.Name = "tesouraLinha1";
+            this.tesouraLinha1.Size = new System.Drawing.Size(100, 50);
+            this.tesouraLinha1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.tesouraLinha1.TabIndex = 12;
+            this.tesouraLinha1.TabStop = false;
+            this.tesouraLinha1.Visible = false;
+            // 
+            // tesouraLinha2
+            // 
+            this.tesouraLinha2.Image = global::TP1.Properties.Resources.tesoura;
+            this.tesouraLinha2.Location = new System.Drawing.Point(157, 246);
+            this.tesouraLinha2.Name = "tesouraLinha2";
+            this.tesouraLinha2.Size = new System.Drawing.Size(100, 50);
+            this.tesouraLinha2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.tesouraLinha2.TabIndex = 13;
+            this.tesouraLinha2.TabStop = false;
+            this.tesouraLinha2.Visible = false;
+            // 
+            // maquinaLinha1
+            // 
+            this.maquinaLinha1.Image = global::TP1.Properties.Resources.maquina;
+            this.maquinaLinha1.Location = new System.Drawing.Point(263, 190);
+            this.maquinaLinha1.Name = "maquinaLinha1";
+            this.maquinaLinha1.Size = new System.Drawing.Size(100, 50);
+            this.maquinaLinha1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.maquinaLinha1.TabIndex = 14;
+            this.maquinaLinha1.TabStop = false;
+            this.maquinaLinha1.Visible = false;
+            // 
+            // maquinaLinha2
+            // 
+            this.maquinaLinha2.Image = global::TP1.Properties.Resources.maquina;
+            this.maquinaLinha2.Location = new System.Drawing.Point(263, 246);
+            this.maquinaLinha2.Name = "maquinaLinha2";
+            this.maquinaLinha2.Size = new System.Drawing.Size(100, 50);
+            this.maquinaLinha2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.maquinaLinha2.TabIndex = 15;
+            this.maquinaLinha2.TabStop = false;
+            this.maquinaLinha2.Visible = false;
+            // 
+            // estampadoraLinha
+            // 
+            this.estampadoraLinha.Image = global::TP1.Properties.Resources.estampadora;
+            this.estampadoraLinha.Location = new System.Drawing.Point(369, 218);
+            this.estampadoraLinha.Name = "estampadoraLinha";
+            this.estampadoraLinha.Size = new System.Drawing.Size(100, 50);
+            this.estampadoraLinha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.estampadoraLinha.TabIndex = 16;
+            this.estampadoraLinha.TabStop = false;
+            this.estampadoraLinha.Visible = false;
+            // 
+            // empacotadoraLinha
+            // 
+            this.empacotadoraLinha.Image = global::TP1.Properties.Resources.embaladora;
+            this.empacotadoraLinha.Location = new System.Drawing.Point(475, 218);
+            this.empacotadoraLinha.Name = "empacotadoraLinha";
+            this.empacotadoraLinha.Size = new System.Drawing.Size(100, 50);
+            this.empacotadoraLinha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.empacotadoraLinha.TabIndex = 17;
+            this.empacotadoraLinha.TabStop = false;
+            this.empacotadoraLinha.Visible = false;
+            // 
+            // labelEstampadoraLinha2
+            // 
+            this.labelEstampadoraLinha2.AutoSize = true;
+            this.labelEstampadoraLinha2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEstampadoraLinha2.Location = new System.Drawing.Point(391, 271);
+            this.labelEstampadoraLinha2.Name = "labelEstampadoraLinha2";
+            this.labelEstampadoraLinha2.Size = new System.Drawing.Size(55, 17);
+            this.labelEstampadoraLinha2.TabIndex = 18;
+            this.labelEstampadoraLinha2.Text = "Linha 2";
+            this.labelEstampadoraLinha2.Visible = false;
+            // 
+            // labelEmpacotadoraLinha2
+            // 
+            this.labelEmpacotadoraLinha2.AutoSize = true;
+            this.labelEmpacotadoraLinha2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmpacotadoraLinha2.Location = new System.Drawing.Point(494, 271);
+            this.labelEmpacotadoraLinha2.Name = "labelEmpacotadoraLinha2";
+            this.labelEmpacotadoraLinha2.Size = new System.Drawing.Size(55, 17);
+            this.labelEmpacotadoraLinha2.TabIndex = 19;
+            this.labelEmpacotadoraLinha2.Text = "Linha 2";
+            this.labelEmpacotadoraLinha2.Visible = false;
+            // 
+            // labelEstampadoraLinha1
+            // 
+            this.labelEstampadoraLinha1.AutoSize = true;
+            this.labelEstampadoraLinha1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEstampadoraLinha1.Location = new System.Drawing.Point(391, 198);
+            this.labelEstampadoraLinha1.Name = "labelEstampadoraLinha1";
+            this.labelEstampadoraLinha1.Size = new System.Drawing.Size(55, 17);
+            this.labelEstampadoraLinha1.TabIndex = 20;
+            this.labelEstampadoraLinha1.Text = "Linha 1";
+            this.labelEstampadoraLinha1.Visible = false;
+            // 
+            // labelEmpacotadoraLinha1
+            // 
+            this.labelEmpacotadoraLinha1.AutoSize = true;
+            this.labelEmpacotadoraLinha1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmpacotadoraLinha1.Location = new System.Drawing.Point(494, 198);
+            this.labelEmpacotadoraLinha1.Name = "labelEmpacotadoraLinha1";
+            this.labelEmpacotadoraLinha1.Size = new System.Drawing.Size(55, 17);
+            this.labelEmpacotadoraLinha1.TabIndex = 21;
+            this.labelEmpacotadoraLinha1.Text = "Linha 1";
+            this.labelEmpacotadoraLinha1.Visible = false;
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(824, 681);
+            this.Controls.Add(this.labelEmpacotadoraLinha1);
+            this.Controls.Add(this.labelEstampadoraLinha1);
+            this.Controls.Add(this.labelEmpacotadoraLinha2);
+            this.Controls.Add(this.labelEstampadoraLinha2);
+            this.Controls.Add(this.empacotadoraLinha);
+            this.Controls.Add(this.estampadoraLinha);
+            this.Controls.Add(this.maquinaLinha2);
+            this.Controls.Add(this.maquinaLinha1);
+            this.Controls.Add(this.tesouraLinha2);
+            this.Controls.Add(this.tesouraLinha1);
+            this.Controls.Add(this.filaB1);
+            this.Controls.Add(this.filaB2);
+            this.Controls.Add(this.filaB3);
+            this.Controls.Add(this.filaA1);
+            this.Controls.Add(this.filaA2);
+            this.Controls.Add(this.filaA3);
+            this.Controls.Add(this.centralDeRecursos);
+            this.Controls.Add(this.linha2);
+            this.Controls.Add(this.linha1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.Name = "View";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "SDCD";
+            this.linha1.ResumeLayout(false);
+            this.linha1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.embalando1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estampa1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.costura1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.corte1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.linha2.ResumeLayout(false);
+            this.linha2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.embalando2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estampa2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.costura2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.corte2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.centralDeRecursos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.empacotadora)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estampadora)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maquina2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maquina1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tesoura2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tesoura1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaA3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaA2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaA1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaB1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaB2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filaB3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tesouraLinha1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tesouraLinha2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maquinaLinha1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maquinaLinha2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estampadoraLinha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empacotadoraLinha)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -79,6 +640,47 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.GroupBox linha1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox embalando1;
+        private System.Windows.Forms.PictureBox estampa1;
+        private System.Windows.Forms.PictureBox costura1;
+        private System.Windows.Forms.PictureBox corte1;
+        private System.Windows.Forms.GroupBox linha2;
+        private System.Windows.Forms.PictureBox embalando2;
+        private System.Windows.Forms.PictureBox estampa2;
+        private System.Windows.Forms.PictureBox costura2;
+        private System.Windows.Forms.PictureBox corte2;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.GroupBox centralDeRecursos;
+        private System.Windows.Forms.PictureBox empacotadora;
+        private System.Windows.Forms.PictureBox estampadora;
+        private System.Windows.Forms.PictureBox maquina2;
+        private System.Windows.Forms.PictureBox maquina1;
+        private System.Windows.Forms.PictureBox tesoura2;
+        private System.Windows.Forms.PictureBox tesoura1;
+        private System.Windows.Forms.PictureBox filaA3;
+        private System.Windows.Forms.PictureBox filaA2;
+        private System.Windows.Forms.PictureBox filaA1;
+        private System.Windows.Forms.PictureBox filaB1;
+        private System.Windows.Forms.PictureBox filaB2;
+        private System.Windows.Forms.PictureBox filaB3;
+        private System.Windows.Forms.PictureBox tesouraLinha1;
+        private System.Windows.Forms.PictureBox tesouraLinha2;
+        private System.Windows.Forms.PictureBox maquinaLinha1;
+        private System.Windows.Forms.PictureBox maquinaLinha2;
+        private System.Windows.Forms.PictureBox estampadoraLinha;
+        private System.Windows.Forms.PictureBox empacotadoraLinha;
+        private System.Windows.Forms.Label labelEstampadoraLinha2;
+        private System.Windows.Forms.Label labelEmpacotadoraLinha2;
+        private System.Windows.Forms.Label labelEstampadoraLinha1;
+        private System.Windows.Forms.Label labelEmpacotadoraLinha1;
+        private System.Windows.Forms.Label labelEstampa1;
+        private System.Windows.Forms.Label labelCostura1;
+        private System.Windows.Forms.Label labelCorte1;
+        private System.Windows.Forms.Label labelEstampa2;
+        private System.Windows.Forms.Label labelCostura2;
+        private System.Windows.Forms.Label labelCorte2;
     }
 }
 

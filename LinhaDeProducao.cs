@@ -7,25 +7,24 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
-    class Work
+    // Classe responsável por abstrair a linha de produção
+    public class LinhaDeProducao
     {
+        private Queue<Produto> fila;
         private Thread t;
-        bool feito = false;
-        private View view;
 
-        public Work(View View)
+        public LinhaDeProducao()
         {
-            view = View;
+            fila = new Queue<Produto>(3);
             t = new Thread(new ThreadStart(ThreadProc));
             t.Start();
         }
 
         private void ThreadProc()
         {
-            while (true)
+            while(true)
             {
-                view.WriteTextSafe("This text was set safely.");
-                Thread.Sleep(10);
+
             }
         }
     }
