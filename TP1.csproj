@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CamisaPolo.cs" />
+    <Compile Include="CamisaRedonda.cs" />
+    <Compile Include="CamisaV.cs" />
     <Compile Include="CentralRecursos.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="LinhaDeProducao.cs" />

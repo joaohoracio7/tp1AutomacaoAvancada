@@ -45,14 +45,12 @@ namespace TP1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            //Produto p = new ProdutoA();
-            //Controller.PrintaNaTela(p.GetCodigoBarras());
-            //new Work(this);
+            new CamisaV(this, 1);
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            new Produto(this);
+            new CamisaV(this,2);
         }
 
         // Método que atualiza as imagens das linhas de produção,

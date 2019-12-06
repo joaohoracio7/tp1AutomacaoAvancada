@@ -15,6 +15,7 @@ namespace TP1
 
         public LinhaDeProducao()
         {
+            // Fila polimorfica
             fila = new Queue<Produto>(3);
             t = new Thread(new ThreadStart(ThreadProc));
             t.Start();
