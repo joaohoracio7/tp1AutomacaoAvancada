@@ -1,0 +1,10 @@
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\obj\Debug\PCP.csprojAssemblyReference.cache
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\obj\Debug\PCP.Properties.Resources.resources
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\obj\Debug\PCP.csproj.GenerateResource.cache
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\obj\Debug\PCP.csproj.CoreCompileInputs.cache
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\bin\Debug\PCP.exe.config
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\bin\Debug\PCP.exe
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\bin\Debug\PCP.pdb
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\obj\Debug\PCP.exe
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\obj\Debug\PCP.pdb
+C:\Users\João\Desktop\projetos\TP1\TP2\PCP\obj\Debug\PCP.View.resources

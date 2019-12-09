@@ -1,0 +1,9 @@
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\bin\Debug\MES.exe.config
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\bin\Debug\MES.exe
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\bin\Debug\MES.pdb
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.csprojAssemblyReference.cache
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.Properties.Resources.resources
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.csproj.GenerateResource.cache
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.exe
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.pdb
