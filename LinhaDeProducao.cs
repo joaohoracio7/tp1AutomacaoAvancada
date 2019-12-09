@@ -42,7 +42,7 @@ namespace TP1
         }
         private void ThreadProc()
         {
-            while(true)
+            while (true)
             {
                 if (fila.Count > 0)
                 {
@@ -54,7 +54,7 @@ namespace TP1
                         qtdEspecifico++;
                     fila.Dequeue().Produz();
                     recursos["tesoura" + nLinha].Release();
-                    if(nLinha == 1)
+                    if (nLinha == 1)
                     {
                         view.atualizaTextBox("totalRedonda1", qtdRedonda);
                         view.atualizaTextBox("totalV", qtdEspecifico);
@@ -64,24 +64,25 @@ namespace TP1
                         view.atualizaTextBox("totalRedonda2", qtdRedonda);
                         view.atualizaTextBox("totalPolo", qtdEspecifico);
                     }
-                    if (fila.Peek() != null)
-                    {
-                        if (fila.Peek().GetType().Name == "CamisaRedonda")
-                        {
-                            view.atualizaLinha(nLinha, 5, "redonda", true);
-                        }
-                        else if (fila.Peek().GetType().Name == "CamisaV")
-                        {
-                            view.atualizaLinha(nLinha, 5, "v", true);
-                        }
-                        else
-                            view.atualizaLinha(nLinha, 5, "polo", true);
-                    }
+                    //if (fila.Peek() != null)
+                    //{
+                    //    if (fila.Peek().GetType().Name == "CamisaRedonda")
+                    //    {
+                    //        view.atualizaLinha(nLinha, 5, "redonda", true);
+                    //    }
+                    //    else if (fila.Peek().GetType().Name == "CamisaV")
+                    //    {
+                    //        view.atualizaLinha(nLinha, 5, "v", true);
+                    //    }
+                    //    else
+                    //        view.atualizaLinha(nLinha, 5, "polo", true);
+                    //}
                 }
-                else
-                {
-                    view.atualizaLinha(nLinha, 5, "", false);
-                }
+                //else
+                //{
+                //    view.atualizaLinha(nLinha, 5, "", false);
+                //}
+                Thread.Sleep(500);
             }
         }
     }
