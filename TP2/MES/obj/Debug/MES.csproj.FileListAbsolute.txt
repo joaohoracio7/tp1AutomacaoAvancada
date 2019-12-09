@@ -7,3 +7,4 @@ C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.csproj.GenerateResourc
 C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.csproj.CoreCompileInputs.cache
 C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.exe
 C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.pdb
+C:\Users\João\Desktop\projetos\TP1\TP2\MES\obj\Debug\MES.View.resources

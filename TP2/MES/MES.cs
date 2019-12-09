@@ -4,6 +4,7 @@ using System.Net.Sockets;
 using System.IO;
 using System.Threading;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace MES
 {
@@ -42,6 +43,7 @@ namespace MES
         // O evento e o seu argumento irá notificar o formulário quando um usuário se conecta, desconecta, envia uma mensagem,etc
         public static event StatusChangedEventHandler StatusChanged;
         private static StatusChangedEventArgs e;
+        private static List<OP> listaOps = new List<OP>();
 
         // O construtor define o endereço IP para aquele retornado pela instanciação do objeto
         public Servidor(IPAddress endereco)
@@ -135,6 +137,14 @@ namespace MES
         // Envia mensagens de um usuário para todos os outros
         public static void EnviaMensagem(string Origem, string Mensagem)
         {
+            if(Origem == "PCP")
+            {
+                String[] Msg = Mensagem.Split('\t');
+                OP op = new OP(int.Parse(Msg[0]), Msg[1], int.Parse(Msg[2]), Msg[3], Msg[4], Msg[5]);
+                listaOps.Add(op);
+                return;
+            }
+
             StreamWriter swSenderSender;
 
             // Primeiro exibe a mensagem na aplicação
