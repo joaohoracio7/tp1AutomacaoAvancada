@@ -50,7 +50,6 @@
     <Compile Include="CamisaRedonda.cs" />
     <Compile Include="CamisaV.cs" />
     <Compile Include="CentralRecursos.cs" />
-    <Compile Include="Controller.cs" />
     <Compile Include="LinhaDeProducao.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="View.cs">

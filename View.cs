@@ -16,7 +16,8 @@ namespace TP1
 {
     public partial class View : Form
     {
-        Controller Controller;
+        private LinhaDeProducao l1;
+        private LinhaDeProducao l2;
         private delegate void DelegateStrBool(String s, Boolean bl);
         private delegate void DelegateIntIntStrBool(int a, int b, String s, Boolean bl);
         Dictionary<String, Image> camisa;
@@ -38,7 +39,8 @@ namespace TP1
         public View()
         {
             InitializeComponent();
-            Controller = new Controller(this);
+            l1 = new LinhaDeProducao(this, 1);
+            l2 = new LinhaDeProducao(this, 2);
             camisa = new Dictionary<string, Image>
             {
                 { "redonda", TP1.Properties.Resources.redonda },
@@ -330,7 +332,8 @@ namespace TP1
                 Motivo += ConResposta.Substring(2, ConResposta.Length - 2);
                 // Atualiza o formulário como o motivo da falha na conexão
                 this.Invoke(new FechaConexaoCallBack(this.FechaConexao), new object[] { Motivo }); //"Invoke" atualiza o textbox para a mensagem mais recente
-                                                                                                   // Sai do método
+                // Sai do método
+
                 return;
             }
 

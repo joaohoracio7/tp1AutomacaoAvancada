@@ -115,6 +115,8 @@ namespace PCP
 
         private void AtualizaLog(string strMensagem)
         {
+            if (strMensagem.Split(' ')[0] == "SDCD")
+                return;
             // Anexa texto ao final de cada linha
             txtLog.AppendText(strMensagem + "\r\n");
         }

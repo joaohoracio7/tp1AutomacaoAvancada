@@ -10,14 +10,16 @@ namespace TP1
     // Classe responsável por abstrair a linha de produção
     public class LinhaDeProducao
     {
+        private View view;
         private Queue<Produto> fila;
         private Thread t;
         private int nLinha;
         private static int qtdRedonda = 0;
         private static int qtdEspecifico = 0;
         protected Dictionary<string, Semaphore> recursos;
-        public LinhaDeProducao(int nLinha)
+        public LinhaDeProducao(View V, int nLinha)
         {
+            view = V;
             this.nLinha = nLinha;
             // Fila polimorfica
             fila = new Queue<Produto>();
