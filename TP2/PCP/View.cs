@@ -109,7 +109,7 @@ namespace PCP
             while (Conectado)
             {
                 // exibe mensagems no Textbox
-                this.Invoke(new AtualizaLogCallBack(this.AtualizaLog), new object[] { strReceptor.ReadLine() });
+                this.Invoke(new AtualizaLogCallBack(this.AtualizaLog), new object[] { strReceptor.ReadLine() });l
             }
         }
 

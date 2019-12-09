@@ -43,7 +43,9 @@ namespace MES
         // O evento e o seu argumento irá notificar o formulário quando um usuário se conecta, desconecta, envia uma mensagem,etc
         public static event StatusChangedEventHandler StatusChanged;
         private static StatusChangedEventArgs e;
-        private static List<OP> listaOps = new List<OP>();
+        private static Queue<OP> filaOpsRedonda = new Queue<OP>();
+        private static Queue<OP> filaOpsV = new Queue<OP>();
+        private static Queue<OP> filaOpsPolo = new Queue<OP>();
 
         // O construtor define o endereço IP para aquele retornado pela instanciação do objeto
         public Servidor(IPAddress endereco)
@@ -141,15 +143,165 @@ namespace MES
             {
                 String[] Msg = Mensagem.Split('\t');
                 OP op = new OP(int.Parse(Msg[0]), Msg[1], int.Parse(Msg[2]), Msg[3], Msg[4], Msg[5]);
-                listaOps.Add(op);
+                if(op.getTipoGola() == "redonda")
+                {
+                    filaOpsRedonda.Enqueue(op);
+                }
+                else if(op.getTipoGola() == "v")
+                {
+                    filaOpsV.Enqueue(op);
+                }
+                else
+                {
+                    filaOpsPolo.Enqueue(op);
+                }
+                
                 return;
             }
+            //else if(Origem == "SDCD")
+            //{
+            //    // Primeiro exibe a mensagem na aplicação
+            //    e = new StatusChangedEventArgs(Origem + " disse : " + Mensagem);
+            //    OnStatusChanged(e);
+
+            //    int faz = 0;
+            //    string tipo;
+            //    String[] Msg = Mensagem.Split(':');
+            //    int linha = int.Parse(Msg[2].Trim());
+
+            //    // Caso Linha 1 requisitando pedido
+            //    if (linha == 1)
+            //    {
+            //       if(filaOpsRedonda.Peek() != null)
+            //        {
+            //            if(filaOpsV.Peek() != null)
+            //            {
+            //                if (filaOpsRedonda.Peek().getQtdProdutos() < filaOpsV.Peek().getQtdProdutos())
+            //                {
+            //                    tipo = "redonda";
+            //                    if (filaOpsRedonda.Peek().getQtdProdutos() > 3)
+            //                    {
+            //                        filaOpsRedonda.Peek().setQtdProdutos(filaOpsRedonda.Peek().getQtdProdutos() - 3);
+            //                        faz = 3;
+            //                        // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                        Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();                                }
+            //                    else
+            //                    {
+            //                        faz = filaOpsRedonda.Peek().getQtdProdutos();
+            //                        filaOpsRedonda.Dequeue();
+            //                        // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                        Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                    }
+            //                }
+            //                else
+            //                {
+            //                    tipo = "v";
+            //                    if (filaOpsV.Peek().getQtdProdutos() > 3)
+            //                    {
+            //                        filaOpsV.Peek().setQtdProdutos(filaOpsV.Peek().getQtdProdutos() - 3);
+            //                        faz = 3;
+            //                        // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                        Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                    }
+            //                    else
+            //                    {
+            //                        faz = filaOpsV.Peek().getQtdProdutos();
+            //                        filaOpsV.Dequeue();
+            //                        // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                        Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                    }
+            //                }
+            //            }
+            //            else
+            //            {
+            //                tipo = "redonda";
+            //                if (filaOpsRedonda.Peek().getQtdProdutos() > 3)
+            //                {
+            //                    filaOpsRedonda.Peek().setQtdProdutos(filaOpsRedonda.Peek().getQtdProdutos() - 3);
+            //                    faz = 3;
+            //                    // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                    Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                }
+            //                else
+            //                {
+            //                    faz = filaOpsRedonda.Peek().getQtdProdutos();
+            //                    filaOpsRedonda.Dequeue();
+            //                    // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                    Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                }
+            //            }
+            //        }
+            //    }
+            //    else // Linha 2 requisitando pedido
+            //    {
+            //        if (filaOpsRedonda.Peek() != null)
+            //        {
+            //            if (filaOpsPolo.Peek() != null)
+            //            {
+            //                if (filaOpsRedonda.Peek().getQtdProdutos() < filaOpsPolo.Peek().getQtdProdutos())
+            //                {
+            //                    tipo = "redonda";
+            //                    if (filaOpsRedonda.Peek().getQtdProdutos() > 3)
+            //                    {
+            //                        filaOpsRedonda.Peek().setQtdProdutos(filaOpsRedonda.Peek().getQtdProdutos() - 3);
+            //                        faz = 3;
+            //                        // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                        Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                    }
+            //                    else
+            //                    {
+            //                        faz = filaOpsRedonda.Peek().getQtdProdutos();
+            //                        filaOpsRedonda.Dequeue();
+            //                        // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                        Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                    }
+            //                }
+            //                else
+            //                {
+            //                    tipo = "polo";
+            //                    if (filaOpsPolo.Peek().getQtdProdutos() > 3)
+            //                    {
+            //                        filaOpsPolo.Peek().setQtdProdutos(filaOpsPolo.Peek().getQtdProdutos() - 3);
+            //                        faz = 3;
+            //                        // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                        Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                    }
+            //                    else
+            //                    {
+            //                        faz = filaOpsPolo.Peek().getQtdProdutos();
+            //                        filaOpsPolo.Dequeue();
+            //                        // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                        Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                    }
+            //                }
+            //            }
+            //            else
+            //            {
+            //                tipo = "redonda";
+            //                if (filaOpsRedonda.Peek().getQtdProdutos() > 3)
+            //                {
+            //                    filaOpsRedonda.Peek().setQtdProdutos(filaOpsRedonda.Peek().getQtdProdutos() - 3);
+            //                    faz = 3;
+            //                    // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                    Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                }
+            //                else
+            //                {
+            //                    faz = filaOpsRedonda.Peek().getQtdProdutos();
+            //                    filaOpsRedonda.Dequeue();
+            //                    // Atualiza mensagem pra resposta, ela só vai ser útil no SCDC
+            //                    Mensagem = faz.ToString() + " camisetas: " + tipo + "na linha: " + linha.ToString();
+            //                }
+            //            }
+            //        }
+            //    }
+            //    if(faz == 0)
+            //    {
+            //        return;
+            //    }
+            //}
 
             StreamWriter swSenderSender;
-
-            // Primeiro exibe a mensagem na aplicação
-            e = new StatusChangedEventArgs(Origem + " disse : " + Mensagem);
-            OnStatusChanged(e);
 
             // Cria um array de clientes TCPs do tamanho do numero de clientes existentes
             TcpClient[] tcpClientes = new TcpClient[Servidor.htUsuarios.Count];
@@ -168,7 +320,7 @@ namespace MES
                     }
                     // Envia a mensagem para o usuário atual no laço
                     swSenderSender = new StreamWriter(tcpClientes[i].GetStream());
-                    swSenderSender.WriteLine(Origem + " disse: " + Mensagem);
+                    swSenderSender.WriteLine("SDCD" + " faça: " + Mensagem);
                     swSenderSender.Flush();
                     swSenderSender = null;
                 }

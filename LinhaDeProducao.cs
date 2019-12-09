@@ -32,11 +32,11 @@ namespace TP1
             t.Start();
         }
 
-        private int getCountFila()
+        public int getCountFila()
         {
             return fila.Count;
         }
-        private void InsereFila(Produto P)
+        public void InsereFila(Produto P)
         {
             fila.Enqueue(P);
         }
@@ -44,7 +44,7 @@ namespace TP1
         {
             while(true)
             {
-                if(fila.Count > 0)
+                if (fila.Count > 0)
                 {
                     // Verifica se a tesoura da linha disponivel para poder começar a produzir
                     recursos["tesoura" + nLinha].WaitOne();
@@ -54,7 +54,33 @@ namespace TP1
                         qtdEspecifico++;
                     fila.Dequeue().Produz();
                     recursos["tesoura" + nLinha].Release();
-
+                    if(nLinha == 1)
+                    {
+                        view.atualizaTextBox("totalRedonda1", qtdRedonda);
+                        view.atualizaTextBox("totalV", qtdEspecifico);
+                    }
+                    else
+                    {
+                        view.atualizaTextBox("totalRedonda2", qtdRedonda);
+                        view.atualizaTextBox("totalPolo", qtdEspecifico);
+                    }
+                    if (fila.Peek() != null)
+                    {
+                        if (fila.Peek().GetType().Name == "CamisaRedonda")
+                        {
+                            view.atualizaLinha(nLinha, 5, "redonda", true);
+                        }
+                        else if (fila.Peek().GetType().Name == "CamisaV")
+                        {
+                            view.atualizaLinha(nLinha, 5, "v", true);
+                        }
+                        else
+                            view.atualizaLinha(nLinha, 5, "polo", true);
+                    }
+                }
+                else
+                {
+                    view.atualizaLinha(nLinha, 5, "", false);
                 }
             }
         }

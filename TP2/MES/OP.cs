@@ -26,7 +26,23 @@ namespace MES
             this.dataPedido = new DateTime(int.Parse(d[0].Split('/')[2]), int.Parse(d[0].Split('/')[1]), int.Parse(d[0].Split('/')[0]), int.Parse(d[1].Split(':')[0]), int.Parse(d[1].Split(':')[1]), int.Parse(d[1].Split(':')[2]));
         }
 
-        public override string ToString()
+        public int getQtdProdutos()
+        {
+            return qtdProdutos;
+        }
+
+        public void setQtdProdutos(int qtd)
+        {
+            qtdProdutos = qtd;
+        }
+    
+        public String getTipoGola()
+        {
+            return tipoGola.ToLower();
+        }
+        
+
+        public override String ToString()
         {
             return nOp.ToString() + "\t" + nomeCliente + "\t" + qtdProdutos.ToString() + "\t" + tipoGola + "\t" + tipoEstampa + "\t" + dataPedido.ToString();
         }

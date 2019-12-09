@@ -79,8 +79,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtServidorIP = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tipo = new System.Windows.Forms.ComboBox();
             this.linha1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.embalando1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.estampa1)).BeginInit();
@@ -133,11 +134,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(506, 284);
+            this.button2.Location = new System.Drawing.Point(506, 246);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
+            this.button2.Text = "Faz";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
@@ -646,6 +647,13 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Conexão TCP";
             // 
+            // txtServidorIP
+            // 
+            this.txtServidorIP.Location = new System.Drawing.Point(95, 27);
+            this.txtServidorIP.Name = "txtServidorIP";
+            this.txtServidorIP.Size = new System.Drawing.Size(100, 20);
+            this.txtServidorIP.TabIndex = 1;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -655,18 +663,24 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "IP do Servidor:";
             // 
-            // txtServidorIP
+            // tipo
             // 
-            this.txtServidorIP.Location = new System.Drawing.Point(95, 27);
-            this.txtServidorIP.Name = "txtServidorIP";
-            this.txtServidorIP.Size = new System.Drawing.Size(100, 20);
-            this.txtServidorIP.TabIndex = 1;
+            this.tipo.FormattingEnabled = true;
+            this.tipo.Items.AddRange(new object[] {
+            "redonda",
+            "v",
+            "polo"});
+            this.tipo.Location = new System.Drawing.Point(506, 219);
+            this.tipo.Name = "tipo";
+            this.tipo.Size = new System.Drawing.Size(75, 21);
+            this.tipo.TabIndex = 25;
             // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 471);
+            this.Controls.Add(this.tipo);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -784,6 +798,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtServidorIP;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox tipo;
     }
 }
 

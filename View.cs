@@ -18,10 +18,12 @@ namespace TP1
     {
         private LinhaDeProducao l1;
         private LinhaDeProducao l2;
+        private delegate void DelegateStrInt(String s, int i);
         private delegate void DelegateStrBool(String s, Boolean bl);
         private delegate void DelegateIntIntStrBool(int a, int b, String s, Boolean bl);
         Dictionary<String, Image> camisa;
         Dictionary<String, Label> label;
+        Dictionary<String, TextBox> textBox;
 
         // Trata o nome do usuário
         private string NomeUsuario = "SDCD";
@@ -34,7 +36,7 @@ namespace TP1
         private delegate void FechaConexaoCallBack(string strMotivo);
         private Thread mensagemThread;
         private IPAddress enderecoIP;
-        private bool Conectado;
+        public bool Conectado;
 
         public View()
         {
@@ -60,6 +62,13 @@ namespace TP1
                 { "labelEmpacotadoraLinha1", labelEmpacotadoraLinha1 },
                 { "labelEmpacotadoraLinha2", labelEmpacotadoraLinha2 }
             };
+            textBox = new Dictionary<string, TextBox>
+            {
+                { "totalRedonda1", totalRedonda1 },
+                { "totalRedonda2", totalRedonda2 },
+                { "totalV", totalV },
+                { "totalPolo", totalPolo }
+            };
 
             // Na saida da aplicação : desconectar
             Application.ApplicationExit += new EventHandler(OnApplicationExit);
@@ -81,7 +90,23 @@ namespace TP1
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            EnviaMensagem();
+            if(tipo.Text == "v")
+            {
+                l1.InsereFila(new CamisaV(this, 1));
+            }
+            else if (tipo.Text == "polo")
+            {
+                l2.InsereFila(new CamisaPolo(this, 2));
+            }
+            else
+            {
+                if(l1.getCountFila() < l2.getCountFila())
+                {
+                    l1.InsereFila(new CamisaRedonda(this, 1));
+                }
+                else
+                    l2.InsereFila(new CamisaRedonda(this, 2));
+            }
         }
 
         // Método que atualiza as imagens das linhas de produção,
@@ -174,6 +199,26 @@ namespace TP1
                             empacotadora.Visible = !visivel;
                         }
                         break;
+
+                    case 5:
+                        // Testa se a chamada ao método não é feita pela mesma thread que tem o controle do forms
+                        if (filaA1.InvokeRequired)
+                        {
+                            // Caso não seja, invoca um delegate para tal
+                            var d = new DelegateIntIntStrBool(atualizaLinha);
+                            corte1.Invoke(d, linha, etapa, tipo, visivel);
+                        }
+                        else
+                        {
+                            // Caso seja, executa a ação
+                            if (visivel)
+                            {
+                                filaA1.Image = camisa[tipo.ToLower()];
+                            }
+
+                            filaA1.Visible = visivel;
+                        }
+                        break;
                 }
             }
             else
@@ -262,6 +307,26 @@ namespace TP1
                             empacotadora.Visible = !visivel;
                         }
                         break;
+
+                    case 5:
+                        // Testa se a chamada ao método não é feita pela mesma thread que tem o controle do forms
+                        if (filaB1.InvokeRequired)
+                        {
+                            // Caso não seja, invoca um delegate para tal
+                            var d = new DelegateIntIntStrBool(atualizaLinha);
+                            corte1.Invoke(d, linha, etapa, tipo, visivel);
+                        }
+                        else
+                        {
+                            // Caso seja, executa a ação
+                            if (visivel)
+                            {
+                                filaB1.Image = camisa[tipo.ToLower()];
+                            }
+
+                            filaB1.Visible = visivel;
+                        }
+                        break;
                 }
             }
         }
@@ -282,6 +347,22 @@ namespace TP1
             }
         }
 
+        public void atualizaTextBox(string l, int qtd)
+        {
+            // Testa se a chamada ao método não é feita pela mesma thread que tem o controle do forms
+            if (textBox[l].InvokeRequired)
+            {
+                // Caso não seja, invoca um delegate para tal
+                var d = new DelegateStrInt(atualizaTextBox);
+                corte1.Invoke(d, l, qtd);
+            }
+            else
+            {
+                // Caso seja, executa a ação
+                textBox[l].Text = qtd.ToString();
+            }
+        }
+
         private void InicializaConexao()
         {
             try
@@ -291,9 +372,6 @@ namespace TP1
                 // Inicia uma nova conexão TCP com o servidor chat
                 tcpServidor = new TcpClient();
                 tcpServidor.Connect(enderecoIP, 2502);
-
-                // AJuda a verificar se estamos conectados ou não
-                Conectado = true;
 
                 // Desabilita e habilita os campos apropriados
                 txtServidorIP.Enabled = false;
@@ -307,6 +385,9 @@ namespace TP1
                 //Inicia a thread para receber mensagens e nova comunicação
                 mensagemThread = new Thread(new ThreadStart(RecebeMensagens));
                 mensagemThread.Start();
+
+                // AJuda a verificar se estamos conectados ou não
+                Conectado = true;
             }
             catch (Exception ex)
             {
@@ -347,16 +428,18 @@ namespace TP1
 
         private void AtualizaLog(string strMensagem)
         {
+            //String[] msg = strMensagem.Split(':');
+            //if()
             // Anexa texto ao final de cada linha
             richTextBox1.AppendText(strMensagem + "\r\n");
         }
 
         // Envia a mensagem para o servidor
-        private void EnviaMensagem()
+        public void EnviaMensagem(String text)
         {
-            if (true)
+            if (text != "")
             {
-                stwEnviador.WriteLine("Teste"); //Escreve a linha para a conexão TCP
+                stwEnviador.WriteLine(text); //Escreve a linha para a conexão TCP
                 stwEnviador.Flush(); //Garante que a mensagem está sendo enviada de imediato
             }
         }
