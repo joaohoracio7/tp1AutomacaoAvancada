@@ -34,7 +34,6 @@ namespace TP1
                 { "empacotadora", CentralRecursos.empacotadora }
             };
             t = new Thread(new ThreadStart(ThreadProc));
-            Produz();
         }
 
         public String GetCodigoBarras()
